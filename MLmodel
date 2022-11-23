@@ -1,0 +1,20 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.7.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 0.22.1
+mlflow_version: 1.28.0
+model_uuid: cd1c9119716946648d8ed455e3b3e40d
+run_id: AutoML_703b5bcb-4e8d-40f5-8efe-6ba1564568eb_70
+signature:
+  inputs: '[{"name": "Input01", "type": "double"}, {"name": "Input02", "type": "double"},
+    {"name": "Input03", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-09-22 08:48:13.550471'
